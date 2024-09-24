@@ -1,0 +1,16 @@
+#元组的读入，矩阵的读入
+n,m,q = list(map(int,input().split()))
+s = list(map(int,input().split()))
+f = [list(map(int,input().split())) for _ in range(4)]
+g = [list(map(int,input().split())) for _ in range(m)]
+dep_year_cls = [list(map(int,input().split())) for _ in range(q)]
+for a,b,c in dep_year_cls:
+    #物理意义从1开始，索引从0开始的转换
+    dep,year,cl = a-1,b-1,c-1
+    if f[year][cl] and g[dep][cl]:
+        print("Help yourself")
+    elif s[cl] == a:
+        print("Ask for help")
+    else:
+        print("Impossible")
+    

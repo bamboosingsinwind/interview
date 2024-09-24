@@ -1,0 +1,40 @@
+{
+	// 这是我的launch.json，读者不需要看python.主要看C++(gdb启动)的部分
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+        {
+            "name": "Python: Terminal (python)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "python":"E:\\anaconda-an_zhuang_cheng_xu\\envs\\tensorflow\\python.exe",
+            // "debugOptions": ["RedirectOutput"],
+            "console":"integratedTerminal"//"externalTerminal"//"internalConsole" // "integratedTerminal"
+            
+        },
+        // {
+        //     "name": "(gdb) 启动",
+        //     "type": "cppdbg",
+        //     "request": "launch",
+        //     "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        //     "args": [],
+        //     "stopAtEntry": false,
+        //     "cwd": "${workspaceFolder}",
+        //     "environment": [],
+        //     "externalConsole": false,
+        //     "MIMode": "gdb",
+        //     "miDebuggerPath": "gdb",//"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\bin\\gdb.exe",
+        //     "preLaunchTask": "C/C++: g++.exe build active file",
+        //     "setupCommands": [
+        //         {
+        //             "description": "为 gdb 启用整齐打印",
+        //             "text": "-enable-pretty-printing",
+        //             "ignoreFailures": true
+        //         }
+        //     ]
+        // }
+    ]
+}
